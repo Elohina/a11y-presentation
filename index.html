@@ -4,11 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Accessibility 101</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/theme/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -26,41 +27,216 @@
 		<div class="reveal">
 			<div class="slides">
 				<section style="top: 0px; display: block;">
-					<h1>Accessibility 101</h1>
+					<h1>Web Accessibility 101</h1>
 					<p>By Elohina Guevara</p>
 				</section>
 				<section>
-					<h2>What it is a11y?</h2>
+					<h2>What is accessibility (a11y)?</h2>
+					<img src="./disabled_people.jpg" alt="Disabled people" class="plain fragment">
 				</section>
 				<section>
-					<h2>Why should we take care of a11y?</h2>
-					<div>
+					<h2>What is accessibility (a11y)?</h2>
+					<img src="./old-people-clipart-5.jpg" alt="Disabled people" class="plain fragment">
+				</section>
+				<section>
+					<h2>Who are we talking about?</h2>
+					<p>Vision</p>
+					<p>Hearing</p>
+					<p>Cognitive</p>
+					<p>Mobility</p>
+				</section>
+				<section>
+					<h1>Types of disabilities</h1>
+				</section>
+				<section>
+					<section>
+						<h2>Visual</h2>
+						<div class="fragment" style="text-align: left;">
+							<h3>Obstacles - Color blindness</h3>
+							<img class="plain" src="./color-blindness.png" alt="Color" style="width: 1000px; max-width: unset; max-height: unset;">
+						</div>
+					</section>
+					<section>
+						<h2>Visual</h2>
+						<h3>Obstacles - Low level vision</h3>
+						<div style="display: grid; grid-template-columns: 33%; align-items: flex-end; gap: 30px;">
+							<div style="grid-column: 1/2;">
+								<img src="./tunel-vision.jpg" alt="Tunel vision">
+								<h4>Tunel vision</h4>
+							</div>
+							<div style="grid-column: 2/3;">
+								<img src="./central-field-loss.jpg" alt="Centra field loss">
+								<h4>Central field loss</h4>
+							</div>
+							<div style="grid-column: 3/4;">
+								<img src="./clouded-vision.jpg" alt="Clouded vision">
+								<h4>Clouded vision</h4>
+							</div>
+						</div>
+					</section>
+
+						<!-- <ul>
+							<li>Color blindness – difficulty distinguishing between colors such as between red and green, or between yellow and blue, and sometimes inability to perceive any color.</li>
+							<li>Low vision – poor acuity, tunnel vision, central field loss, and clouded vision.</li>
+							<li>Blindness – substantial, uncorrectable loss of vision in both eyes.</li>
+						</ul> -->
+					<section>
+						<h2>Visual</h2>
+						<h3>Obstacles - Blindness</h3>
+					</section>
+					<section>
+						<h2>Visual</h2>
+						<h3>How they use the web?</h3>
+						<ul>
+							<li>Enlarging or reducing text size and images</li>
+							<li>Customizing settings for fonts, colors, and spacing</li>
+							<li>Listening to text-to-speech synthesis of the content</li>
+							<li>Listening to audio descriptions of video in multimedia</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Visual</h2>
+						<h3>Tips</h3>
+						<ol>
+							<li>Provide text equivalents for all non-text objects on the page</li>
+							<li>Don't specify exact sizes for fonts or layouts</li>
+							<li>Use descriptive titles for every page</li>
+							<li>Use good contrats and don't rely only in color to give an information</li>
+							<li>Ensure that tab key navigation works properly</li>
+							<!-- the Tab key is used to move the focus to the item that needs to be selected
+							a screen reader then announces the item so the user knows where the focus is on the page.
+							the user then presses the Enter key instead of “clicking” the mouse button. -->
+						<!-- Mostrar reader -->
+						</ol>
+						<!-- agregar herramienta de Mozilla? -->
+					</section>
+					<section>
+						<h2>Visual</h2>
+						<img src="./form-red.png" alt="">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Hearing</h2>
+						<h3>Obstacles</h3>
+						<p>They will have problems with audio content without captions</p>
+					</section>
+					<section>
+						<h2>Hearing</h2>
+						<h3>How they use the web?</h3>
+						<ul>
+							<li>Using captions in video content</li>
+							<li>Using closed captioning </li>
+							<!-- transcript -->
+						</ul>
+					</section>
+					<section>
+						<h2>Hearing</h2>
+						<div style="position: absolute; width: 40%; left: 0; color: #fff; padding: 28px; font-size: .8em; text-align: left;">
+							<h3>Tips</h3>
+							<ol>
+								<li>Transcripts and captions of audio content</li>
+								<!-- , including audio-only content and audio tracks in multimedia< -->
+								<li>Provide options to adjust the text size and colors of captions</li>
+								<li>Options to stop, pause, and adjust the volume of audio content</li>
+							</ol>
+						</div>
+						<img src="./hearing-tips.jpg" alt="Video with captions" class="plain" style="position: relative; width: 450px; float: right;">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Mobility</h2>
+						<h3>Obstacles</h3>
+						<ul>
+							<li>Difficulty making the exact hand movement required to use a mouse</li>
+							<li>Paralyzed</li>
+							<li>Old age hardware limitations</li>
+						</ul>
+					</section>
+					<!-- <section>
+						<h2>Mobility</h2>
+						<div style="position: absolute; width: 90%; left: 0z;  color: #fff; padding: 28px; font-size: 24px; text-align: left;">
+						<h3>Obstacles</h3>
+						<p>They will have problems with audio content without captions.</p>
+						</div>
+
+					</section> -->
+					<section>
+						<h2>Mobility</h2>
+						<h3>Tips</h3>
+						<ol>
+							<!-- Although they rely more on physical solutions: special hardware designed for them-->
+							<li>Provision of buttons rather than text for navigation to provide a larger ‘target’ for links</li>
+							<li>Clear consistent layouts and navigation.</li>
+							<li>Don’t think everybody uses a mouse</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Cognitive</h2>
+						<h3>Obstacles</h3>
+						<ul>
+							<li>Mental illness</li> 
+							<!-- (such as depression and schizophrenia) -->
+							<li>Learning disabilities</li>
+							 <!-- (dyslexia) -->
+							<li>And many more...</li>
+							<!-- There is a lot of diversity within clinical definitions of cognitive impairments. Common set of functional problems:
+							Understanding content
+							Remembering how to complete tasks
+							Confusion caused by inconsistent webpage layouts -->
+						</ul>
+					</section>
+					<section>
+						<h2>Cognitive</h2>
+						<h3>Tips</h3>
+						<ol>
+							<li>Clearly structured content</li>
+							<!-- that facilitates overview and orientation -->
+							<li>Consistent labeling of forms, buttons, and other content parts</li>
+							<li>Predictable link targets, functionality, and overall interaction</li>
+							<li>Different ways of navigating websites, such as hierarchical menu and search</li>
+							<li>Options to suppress blinking, flickering, flashing, and otherwise distracting content</li>
+							<li>Simpler text that is supplemented by images, graphs, and other illustrations</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<h2>Is a11y important in our projects?</h2>
+					<div class="fragment">
 						<p>Let's see the numbers!</p>
 					</div>
 				</section>
 				<section>
 					<h2>Worldwide</h2>
-					<h3>
+					<h4>
 						<a href="https://www.who.int/disabilities/world_report/2011/report/en/" target="_blank" rel="noopener noreferrer" title="Link opens in a new tab">World Health Organization</a>
-					</h3>
-					<blockquote>About 15% of the world's population lives with some form of disability</blockquote>
+					</h4>
+					<blockquote class="fragment">About 15% of the world's population lives with some form of disability</blockquote>
 				</section>
 				<section data-background-iframe="https://www.who.int/mediacentre/news/releases/2011/disabilities_20110609/en/" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2>Key facts</h2>
-						<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
+					<div style="position: absolute; width: 60%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); padding: 20px; font-size: .8em; text-align: left;">
+					<!-- actualizar -->
+						<h3>Key facts</h3>
+						<ul>
+							<li>Over a billion people have some form of disability</li>
+							<li>Between 110 million and 190 million adults have significant difficulties in functioning</li>
+							<li>Rates of disability are increasing due to population ageing and increases in chronic health conditions, among other causes.</li>
+						</ul>
 					</div>
 				</section>
 				<section>
 					<h2>UK</h2>
-					<h3>
+					<h4>
 						<a href="https://www.gov.uk/government/statistics/family-resources-survey-financial-year-201718" target="_blank" rel="noopener noreferrer" title="Link opens in a new tab">Family Resources Survey: financial year 2017/18</a>
-					</h3>
-					<blockquote>Twenty-one per cent (13.3 million) of people reported a disability in 2017/18</blockquote>
+					</h4>
+					<blockquote class="fragment">21% (13.3 million) of people reported a disability in 2017/18</blockquote>
 				</section>
 				<section data-background="/uk-stats.png">
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2>Key facts</h2>
+					<div style="position: absolute; width: 60%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: .8em; text-align: left;">
+						<h3>Key facts</h3>
 						<ul>
 							<li>8% of children are disabled</li>
 							<li>18% of working age adults are disabled</li>
@@ -70,29 +246,67 @@
 				</section>
 				<section>
 					<h2>Ireland</h2>
-					<h3>
+					<h4>
 						<a href="https://www.cso.ie/en/releasesandpublications/ep/p-cp9hdc/p8hdc/p9d/" target="_blank" rel="noopener noreferrer" title="Link opens in a new tab">Central Statistics Office</a>
-					</h3>
-					<blockquote>There were a total of 643,131 people who stated they had a disability in April 2016, accounting for 13.5 per cent of the population.</blockquote>
+					</h4>
+					<!-- resumir! -->
+					<blockquote class="fragment">643,131 people stated they had a disability in April 2016, accounting for 13.5% of the population.</blockquote>
 				</section>
 				<section data-background-iframe="https://www.cso.ie/en/releasesandpublications/ep/p-cp9hdc/p8hdc/p9d/" data-background-interactive>
-					<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2>Key facts</h2>
+					<div style="position: absolute; width: 60%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: .8em; text-align: left;">
+						<h3>Key facts</h3>
+						<!-- actualizar -->
 						<ul>
-							<li>8% of children are disabled</li>
-							<li>18% of working age adults are disabled</li>
-							<li>44% of pension age adults are disabled</li>
+							<li>6.7% of the population aged under 20 had a disability</li>
+							<li>49.5% of the population aged 75 and over had a disability</li>
 						</ul>
 					</div>
 				</section>
 				<section>
-					<h2>Who are we talking about?</h2>
+					<h2>Which other reason makes it important?</h2>
 					<ul>
-						<li>Blind, Low vision, Color blind</li>
-						<li>Deaf, Hard of Hearing</li>
-						<li>Cognitive/Learning</li>
-						<li>Limited Mobility</li>
+						<li>Our quality seal</li>
+						<li>It's a must nowadays</li>
+
 					</ul>
+				</section>
+				<section>
+					<h2>Domino's case</h2>
+				</section>
+				<section data-background-iframe="https://www.youtube.com/embed/KImylrZJdhk" data-background-interactive>
+					<!-- <div style="position: absolute; width: 40%; right: 0; bottom: 5px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					</div> -->
+				</section>
+				<section>
+					<p>&#128588;&#127996;</p>
+					<img src="./dominos-sue.png" alt="Dominos due result">
+				</section>
+				<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KImylrZJdhk?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+				<section>
+					<h2>United Nations</h2>
+				</section>
+				<section>
+					<h1>Gravity</h1>
+					<img src="/gravity-logo.svg" alt="Gravity logo" style="width: 40%;" class="plain" >
+				</section>
+				<section data-background-iframe="http://style-next.buildit.digital/index.html" data-background-interactive>
+
+				</section>
+				<section data-background-iframe="https://cycle-7.buildit.digital/" data-background-interactive>
+
+				</section>
+				<section>
+					<h2>My work in Gravity</h2>
+				</section>
+				<section>
+					<h3>Thank you!</h3>
+					<h3>Gracias!</h3>
+					<h3>Go raibh maith agat!</h3>
+					<h3>Arigato!</h3>
+					<h3>Obrigado!</h3>
+					<h3>Köszönöm!</h3>
+					<h3>Dziękuję Ci!</h3>
+					<iframe style="position: absolute; top: 25%; left: 60%;" src="https://giphy.com/embed/fjyGsdRkYqb3j1WODz" width="400" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 				</section>
 			</div>
 		</div>
@@ -109,7 +323,8 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
+				],
+				hash: true,
 			});
 		</script>
 	</body>

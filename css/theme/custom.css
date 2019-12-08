@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+.reveal {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.2;
+    text-transform: unset;
+}
+
+.reveal h1 {
+  font-size: 2.5em; }
+
+.reveal h2 {
+  font-size: 1.6em; }
+
+.reveal h3 {
+  font-size: 1.2em; }
+
+.reveal h4 {
+  font-size: .8em; }
+
+.reveal h5 {
+  font-size: .6em; }
+
+.title.left {
+  float: left;
+  margin: -20% 0 0 -30%;
+}
+
+.reveal .slide-background-content {
+  background-position: unset;
+}
+
+h3 {
+  border-bottom: 1px solid #e7ad52;
+  border-bottom-width: thick;
+  width: fit-content;
+  width: max-content;
+  padding-bottom: 7px;
+}
+
+.reveal section img.plain {
+  background: unset;
+}
+
+li {
+    margin-bottom: 8.5px;
+    font-size: .8em;
+}

@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 /*********************************************
  * GLOBAL STYLES
@@ -13,7 +13,7 @@ body {
   background-color: #111; }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: normal;
   color: #eee; }
@@ -44,22 +44,22 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #eee;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: "Montserrat", Impact, sans-serif;
+  font-weight: normal;
   line-height: 1.2;
-  letter-spacing: normal;
+  letter-spacing: -0.03em;
   text-transform: none;
   text-shadow: none;
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
+  font-size: 3.77em; }
 
 .reveal h2 {
-  font-size: 1.6em; }
+  font-size: 2.11em; }
 
 .reveal h3 {
-  font-size: 1.3em; }
+  font-size: 1.55em; }
 
 .reveal h4 {
   font-size: 1em; }
@@ -269,16 +269,3 @@ body {
 @media print {
   .backgrounds {
     background-color: #111; } }
-
-/*********************************************
- * CUSTOM SLIDES ELOHINA
- *********************************************/
-
-.title.left {
-  float: left;
-  margin: -20% 0 0 -30%;
-}
-
-.reveal .slide-background-content {
-  background-position: unset;
-}
