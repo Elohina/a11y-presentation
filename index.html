@@ -26,13 +26,19 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section style="top: 0px; display: block;">
+				<section>
+					<img src="./problems.png" alt="" style="width: 60%;">
 					<h1>Web Accessibility 101</h1>
 					<p>By Elohina Guevara</p>
 				</section>
 				<section>
 					<h2>What is accessibility (a11y)?</h2>
 					<img src="./disabled_people.jpg" alt="Disabled people" class="plain fragment">
+					<aside class="notes">
+						<li>the practice of making your websites usable by as many people as possible.</li>
+						<li>We traditionally think of this as being about people with disabilities</li>
+						<li>but the practice of making sites accessible also benefits other groups such as those using mobile devices, or those with slow network connections</li>
+					</aside>
 				</section>
 				<section>
 					<h2>What is accessibility (a11y)?</h2>
@@ -46,15 +52,17 @@
 					<p>Mobility</p>
 				</section>
 				<section>
-					<h1>Types of disabilities</h1>
-				</section>
-				<section>
 					<section>
 						<h2>Visual</h2>
 						<div class="fragment" style="text-align: left;">
 							<h3>Obstacles - Color blindness</h3>
 							<img class="plain" src="./color-blindness.png" alt="Color" style="width: 1000px; max-width: unset; max-height: unset;">
 						</div>
+						<aside class="notes">
+							<ul>
+								<li>Color blindness – difficulty distinguishing between colors such as between red and green, or between yellow and blue, and sometimes inability to perceive any color.</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h2>Visual</h2>
@@ -73,42 +81,49 @@
 								<h4>Clouded vision</h4>
 							</div>
 						</div>
+						<aside class="notes">
+							<ul>
+								<li>Low vision – poor acuity, tunnel vision, central field loss, and clouded vision.</li>
+							</ul>
+						</aside>
 					</section>
-
-						<!-- <ul>
-							<li>Color blindness – difficulty distinguishing between colors such as between red and green, or between yellow and blue, and sometimes inability to perceive any color.</li>
-							<li>Low vision – poor acuity, tunnel vision, central field loss, and clouded vision.</li>
-							<li>Blindness – substantial, uncorrectable loss of vision in both eyes.</li>
-						</ul> -->
 					<section>
 						<h2>Visual</h2>
 						<h3>Obstacles - Blindness</h3>
+						<aside class="notes">
+							<ul>
+								<li>Blindness – substantial, uncorrectable loss of vision in both eyes.</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h2>Visual</h2>
 						<h3>How they use the web?</h3>
 						<ul>
-							<li>Enlarging or reducing text size and images</li>
-							<li>Customizing settings for fonts, colors, and spacing</li>
-							<li>Listening to text-to-speech synthesis of the content</li>
-							<li>Listening to audio descriptions of video in multimedia</li>
+							<li class="fragment">Enlarging or reducing text size and images</li>
+							<li class="fragment">Customizing settings for fonts, colors, and spacing</li>
+							<li class="fragment">Listening to text-to-speech synthesis of the content</li>
+							<li class="fragment">Listening to audio descriptions of video in multimedia</li>
 						</ul>
+						<aside class="notes"><p>People with visual disabilities typically rely on changing the presentation of web content into forms that are more usable for their particular needs</p></aside>
 					</section>
 					<section>
 						<h2>Visual</h2>
 						<h3>Tips</h3>
 						<ol>
-							<li>Provide text equivalents for all non-text objects on the page</li>
-							<li>Don't specify exact sizes for fonts or layouts</li>
-							<li>Use descriptive titles for every page</li>
-							<li>Use good contrats and don't rely only in color to give an information</li>
-							<li>Ensure that tab key navigation works properly</li>
-							<!-- the Tab key is used to move the focus to the item that needs to be selected
-							a screen reader then announces the item so the user knows where the focus is on the page.
-							the user then presses the Enter key instead of “clicking” the mouse button. -->
-						<!-- Mostrar reader -->
+							<li class="fragment">Provide text equivalents for all non-text objects on the page</li>
+							<li class="fragment">Don't specify exact sizes for fonts or layouts</li>
+							<li class="fragment">Use descriptive titles for every page</li>
+							<li class="fragment">Ensure that tab key navigation works properly</li>
+							<li class="fragment">Use good contrats and don't rely only in color to give an information</li>
 						</ol>
-						<!-- agregar herramienta de Mozilla? -->
+						<aside class="notes">
+							<p>the Tab key is used to move the focus to the item that needs to be selected
+							a screen reader then announces the item so the user knows where the focus is on the page.
+							the user then presses the Enter key instead of “clicking” the mouse button.</p>
+							
+							<p>PD: Mostrar reader</p>
+						</aside>
 					</section>
 					<section>
 						<h2>Visual</h2>
@@ -125,8 +140,8 @@
 						<h2>Hearing</h2>
 						<h3>How they use the web?</h3>
 						<ul>
-							<li>Using captions in video content</li>
-							<li>Using closed captioning </li>
+							<li class="fragment">Using captions in video content</li>
+							<li class="fragment">Using closed captioning </li>
 							<!-- transcript -->
 						</ul>
 					</section>
@@ -135,10 +150,10 @@
 						<div style="position: absolute; width: 40%; left: 0; color: #fff; padding: 28px; font-size: .8em; text-align: left;">
 							<h3>Tips</h3>
 							<ol>
-								<li>Transcripts and captions of audio content</li>
+								<li class="fragment">Transcripts and captions of audio content</li>
 								<!-- , including audio-only content and audio tracks in multimedia< -->
-								<li>Provide options to adjust the text size and colors of captions</li>
-								<li>Options to stop, pause, and adjust the volume of audio content</li>
+								<li class="fragment">Provide options to adjust the text size and colors of captions</li>
+								<li class="fragment">Options to stop, pause, and adjust the volume of audio content</li>
 							</ol>
 						</div>
 						<img src="./hearing-tips.jpg" alt="Video with captions" class="plain" style="position: relative; width: 450px; float: right;">
@@ -149,28 +164,21 @@
 						<h2>Mobility</h2>
 						<h3>Obstacles</h3>
 						<ul>
-							<li>Difficulty making the exact hand movement required to use a mouse</li>
-							<li>Paralyzed</li>
-							<li>Old age hardware limitations</li>
+							<li class="fragment">Difficulty making the exact hand movement required to use a mouse</li>
+							<li class="fragment">Paralyzed</li>
+							<img class="fragment" src="./head-pointer.jpeg" alt="Head pointer" style="position: absolute; top: 70%; right: 10%;">
+							<li class="fragment">Old age hardware limitations</li>
 						</ul>
 					</section>
-					<!-- <section>
-						<h2>Mobility</h2>
-						<div style="position: absolute; width: 90%; left: 0z;  color: #fff; padding: 28px; font-size: 24px; text-align: left;">
-						<h3>Obstacles</h3>
-						<p>They will have problems with audio content without captions.</p>
-						</div>
-
-					</section> -->
 					<section>
 						<h2>Mobility</h2>
 						<h3>Tips</h3>
 						<ol>
-							<!-- Although they rely more on physical solutions: special hardware designed for them-->
-							<li>Provision of buttons rather than text for navigation to provide a larger ‘target’ for links</li>
-							<li>Clear consistent layouts and navigation.</li>
-							<li>Don’t think everybody uses a mouse</li>
+							<li class="fragment">Provision of buttons rather than text for navigation to provide a larger ‘target’ for links</li>
+							<li class="fragment">Clear consistent layouts and navigation.</li>
+							<li class="fragment">Don’t think everybody uses a mouse</li>
 						</ol>
+						<aside class="notes">Although they rely more on physical solutions: special hardware designed for them</aside>
 					</section>
 				</section>
 				<section>
@@ -178,30 +186,36 @@
 						<h2>Cognitive</h2>
 						<h3>Obstacles</h3>
 						<ul>
-							<li>Mental illness</li> 
-							<!-- (such as depression and schizophrenia) -->
-							<li>Learning disabilities</li>
-							 <!-- (dyslexia) -->
-							<li>And many more...</li>
-							<!-- There is a lot of diversity within clinical definitions of cognitive impairments. Common set of functional problems:
-							Understanding content
-							Remembering how to complete tasks
-							Confusion caused by inconsistent webpage layouts -->
+							<li class="fragment">Mental illness</li>
+							<li class="fragment">Learning disabilities</li>
+							<li class="fragment">And many more...</li>
 						</ul>
+						<aside class="notes">
+							<ul>
+								<li>Mental illness: such as depression and schizophrenia</li>
+								<li>Learning disabilities: dyslexia</li>
+								<li>There is a lot of diversity within clinical definitions of cognitive impairments. Common set of functional problems:</li>
+								<ul>
+									<li>Understanding content</li>
+									<li>Remembering how to complete tasks</li>
+									<li>Confusion caused by inconsistent webpage layouts</li>
+								</ul>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<h2>Cognitive</h2>
 						<h3>Tips</h3>
 						<ol>
-							<li>Clearly structured content</li>
-							<!-- that facilitates overview and orientation -->
-							<li>Consistent labeling of forms, buttons, and other content parts</li>
-							<li>Predictable link targets, functionality, and overall interaction</li>
-							<li>Different ways of navigating websites, such as hierarchical menu and search</li>
-							<li>Options to suppress blinking, flickering, flashing, and otherwise distracting content</li>
-							<li>Simpler text that is supplemented by images, graphs, and other illustrations</li>
+							<li class="fragment">Clearly structured content</li>
+							<li class="fragment">Consistent labeling of forms, buttons, and other content parts</li>
+							<li class="fragment">Predictable link targets, functionality, and overall interaction</li>
+							<li class="fragment">Simpler text that is supplemented by images, graphs, and other illustrations</li>
 						</ol>
 					</section>
+					<aside class="notes">
+						Clearly structured content that facilitates overview and orientation
+					</aside>
 				</section>
 				<section>
 					<h2>Is a11y important in our projects?</h2>
@@ -218,7 +232,6 @@
 				</section>
 				<section data-background-iframe="https://www.who.int/mediacentre/news/releases/2011/disabilities_20110609/en/" data-background-interactive>
 					<div style="position: absolute; width: 60%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); padding: 20px; font-size: .8em; text-align: left;">
-					<!-- actualizar -->
 						<h3>Key facts</h3>
 						<ul>
 							<li>Over a billion people have some form of disability</li>
@@ -263,27 +276,31 @@
 					</div>
 				</section>
 				<section>
-					<h2>Which other reason makes it important?</h2>
+					<h2>Why does a11y matter?</h2>
 					<ul>
-						<li>Our quality seal</li>
-						<li>It's a must nowadays</li>
-
+						<li class="fragment zoom-in">It's the right thing to do &#128077;</li>
+						<li class="fragment zoom-in">It has a positive impact on usability &#129331;</li>
+						<li class="fragment zoom-in">We want more customers &#129297;</li>
+						<li class="fragment zoom-in">We don't want to get our customers sued 👩‍⚖️</li>
 					</ul>
 				</section>
 				<section>
 					<h2>Domino's case</h2>
 				</section>
 				<section data-background-iframe="https://www.youtube.com/embed/KImylrZJdhk" data-background-interactive>
-					<!-- <div style="position: absolute; width: 40%; right: 0; bottom: 5px; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-					</div> -->
 				</section>
 				<section>
 					<p>&#128588;&#127996;</p>
 					<img src="./dominos-sue.png" alt="Dominos due result">
 				</section>
-				<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KImylrZJdhk?start=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 				<section>
-					<h2>United Nations</h2>
+					<h2>EU Web Accessibility Directive</h2>
+					<h4>
+						<a href="http://nda.ie/Publications/Communications/EU-Web-Accessibility-Directive/" target="_blank" rel="noopener noreferrer" title="Link opens in a new tab">National Disability Authority</a>
+					</h4>
+					<blockquote>
+						Directive (EU) 2016/2102 of the European Parliament and of the Council... requires public bodies to ensure their websites and apps are accessible to persons with disabilities. All websites created after 23 September 2018 will have to be accessible by 23 September 2019. Existing websites will have to comply by 23 September 2020.
+					</blockquote>
 				</section>
 				<section>
 					<h1>Gravity</h1>
@@ -296,7 +313,17 @@
 
 				</section>
 				<section>
-					<h2>My work in Gravity</h2>
+					<section>
+						<h2>My work in Gravity</h2>
+						<iframe src="https://giphy.com/embed/11BbGyhVmk4iLS" width="350" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+					</section>
+					<section>
+						<h2>Automated tests</h2>
+						<img src="./axe-core.png" alt="Axe core logo" class="plain" style="width: 50%;">
+						<h4>Accessibility testing engine for websites and other HTML-based user interface</h4>
+						<img src="/wcag.jpeg" alt="WCAG logo" class="plain">
+						<h4>Web Content Accessibility Guidelines</h4>
+					</section>
 				</section>
 				<section>
 					<h3>Thank you!</h3>
